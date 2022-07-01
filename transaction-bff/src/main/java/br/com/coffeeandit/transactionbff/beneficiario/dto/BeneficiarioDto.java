@@ -1,15 +1,21 @@
 package br.com.coffeeandit.transactionbff.beneficiario.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
+@Getter
+@Setter
+@ToString
 public class BeneficiarioDto implements Serializable {
 
     @Schema(description = "CPF do Beneficiário")
     @NotNull(message = "Informar o cpf")
-    private Long CPF;
+    private Long cpf;
 
     @NotNull(message = "Informar o código do banco de destino.")
     @Schema(description = "Código do banco de destino")
