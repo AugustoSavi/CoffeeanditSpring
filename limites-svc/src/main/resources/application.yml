@@ -1,0 +1,21 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+
+  datasource:
+    hikari:
+      maximum-pool-size: 20
+      minimum-idle: 3
+
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/limites
+    username: limite
+    password: limite_passwd
+    driverClassName: org.postgresql.Driver

@@ -1,5 +1,7 @@
 # Coffeeandit Spring
 
+![arquiterua](.github/arquitetura.png)
+
 ## Conteúdo Programático
 
 - [x] Aula 0 - Configurando Ambiente (JDK e Gradle)Página
@@ -12,7 +14,7 @@
 
 - [x] Aula 03 - Cache com Spring Data RedisPágina
 
-- [ ] Aula 04 - Spring DataPágina
+- [x] Aula 04 - Spring DataPágina
 
 - [ ] Aula 05 - Database Migrations com FlywayPágina
 
