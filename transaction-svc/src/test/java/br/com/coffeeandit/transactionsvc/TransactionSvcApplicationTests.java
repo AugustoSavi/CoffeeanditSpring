@@ -1,11 +1,12 @@
-package com.cofeeandit.limitessvc;
+package br.com.coffeeandit.transactionsvc;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class LimitesSvcApplicationTests {
+class TransactionSvcApplicationTests {
 
+	@Test
 	void contextLoads() {
 	}
 
