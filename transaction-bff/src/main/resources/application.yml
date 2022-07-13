@@ -5,3 +5,6 @@ spring:
   redis:
     port: 6379
     host: localhost
+
+limites:
+  url: http://localhost:8081

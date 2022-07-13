@@ -6,7 +6,7 @@ spring:
     clean-disabled: false
     clean-on-validation-error: false
     locations: classpath:db/migration
-    table: schema_history
+    table: flyway_schema_history
 
   jpa:
     show-sql: true
@@ -25,3 +25,7 @@ spring:
     username: limite
     password: limite_passwd
     driverClassName: org.postgresql.Driver
+
+
+limite:
+  valor: 2000

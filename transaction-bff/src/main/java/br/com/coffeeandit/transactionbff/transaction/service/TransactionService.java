@@ -1,5 +1,6 @@
 package br.com.coffeeandit.transactionbff.transaction.service;
 
+import br.com.coffeeandit.transactionbff.exception.UnauthorizedException;
 import br.com.coffeeandit.transactionbff.redis.repositories.TransactionRedisRepository;
 import br.com.coffeeandit.transactionbff.transaction.dto.RequestTransactionDto;
 import br.com.coffeeandit.transactionbff.transaction.dto.TransactionDto;

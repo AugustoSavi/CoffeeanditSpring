@@ -1,5 +1,6 @@
 package br.com.coffeeandit.transactionbff.transaction.controller;
 
+import br.com.coffeeandit.transactionbff.exception.NotFoundException;
 import br.com.coffeeandit.transactionbff.transaction.dto.RequestTransactionDto;
 import br.com.coffeeandit.transactionbff.transaction.dto.TransactionDto;
 import br.com.coffeeandit.transactionbff.transaction.service.TransactionService;
@@ -10,8 +11,10 @@ import io.swagger.v3.oas.annotations.enums.ParameterIn;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 
 import java.util.Optional;
@@ -38,7 +41,7 @@ public class TransactionController {
         if (transactionDto.isPresent()) {
             return Mono.just(transactionDto.get());
         }
-        throw new RuntimeException();
+        throw new NotFoundException("Não encontrado");
     }
 
     @Operation(description = "API para criar uma transação financeira")
@@ -55,7 +58,7 @@ public class TransactionController {
         if (transactionDto.isPresent()) {
             return Mono.just(transactionDto.get());
         }
-        throw new RuntimeException();
+        throw new NotFoundException("Não encontrado");
     }
 
     @Operation(description = "API para remover a transaçãp persistida por id")

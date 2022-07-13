@@ -20,9 +20,9 @@
 
 - [x] Aula 06 - Spring Data Mongo
 
-- [ ] Aula 06.1 - OpenFeign
+- [x] Aula 06.1 - OpenFeign
 
-- [ ] Aula 07 - Exception Handler
+- [x] Aula 07 - Exception Handler
 
 - [ ] Aula 08 - Circuit Breaker
 
